@@ -7,12 +7,12 @@ public class metodo {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Método de Bisección para encontrar raíces de f(x) = x^3 - x - 2");
+        System.out.println("Metodo de Bisección para encontrar raices de f(x) = x^3 - x - 2");
 
-        System.out.print("Ingrese el límite inferior a: ");
+        System.out.print("Ingrese el limite inferior a: ");
         double a = scanner.nextDouble();
 
-        System.out.print("Ingrese el límite superior b: ");
+        System.out.print("Ingrese el limite superior b: ");
         double b = scanner.nextDouble();
 
         if (f(a) * f(b) >= 0) {
@@ -21,10 +21,10 @@ public class metodo {
             return;
         }
 
-        System.out.print("Ingrese la tolerancia (ej. 0.0001): ");
+        System.out.print("Ingrese la tolerancia (ej. 0,0001): ");
         double tol = scanner.nextDouble();
 
-        System.out.print("Ingrese el número máximo de iteraciones: ");
+        System.out.print("Ingrese el numero maximo de iteraciones: ");
         int maxIter = scanner.nextInt();
 
         double c = a;
@@ -44,7 +44,7 @@ public class metodo {
             }
         }
 
-        System.out.printf("\nAproximación de la raíz: %.6f\n", c);
+        System.out.printf("\nAproximacion de la raiz: %.6f\n", c);
         System.out.println("Iteraciones realizadas: " + iter);
 
         scanner.close();
